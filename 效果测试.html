@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		table{
+			width: 600px;
+			border-collapse: collapse;
+		}
+		thead{
+			background-color: #ccc;
+		}
+		tbody{
+			text-align: center;
+		}
+		tbody td{
+			width: 165px;
+			height: 20px;
+		}
+/*		.box{
+			width: 500px;
+			height: 500px;
+			background-color: #ccc;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="box" id="box"></div>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+		var tableDates = {
+			head : ["姓名", "科目", "成绩", "操作"],
+			body : [
+			    {"id" : 1023303211, "name" : "张三1", "subject" : "语文1", "score" : 99.8},
+			    {"id" : 1026303232, "name" : "张三2", "subject" : "语文2", "score" : 80.8},
+			    {"id" : 1025013253, "name" : "张三3", "subject" : "语文3", "score" : 70.8},
+			    {"id" : 1026413224, "name" : "张三4", "subject" : "语文4", "score" : 100},
+			    {"id" : 1023411265, "name" : "张三5", "subject" : "语文5", "score" : 60},
+			    {"id" : 1023401206, "name" : "张三6", "subject" : "语文6", "score" : 70},
+			    {"id" : 1023003297, "name" : "张三7", "subject" : "语文7", "score" : 89.8}
+			  ]
+			};
+		function CreateTool(datas, element){
+			this.datas = datas;
+			this.element = element;
+		}
+		CreateTool.prototype.creat = function(){
+			var head = this.datas.head;
+			var body = this.datas.body;
+			var str = '<table border ="1"><thead><tr>';
+			$.each(head, function(i, ele){
+				str += '<th>' + ele + '</th>';
+			})
+			str += '</tr></thead></tbody>';
+			$.each(body, function(i, ele){
+				str += '<tr>';
+				$.each(ele, function(k, value){
+					if (k !== 'id') {
+						str += '<td>' + value + '</td>';
+					}
+				});
+				str += '</tr>';
+			});
+			str += '</tbody></table>';
+			this.element.html(str);
+		};
+		CreateTool.prototype.delDate = function(){
+
+		};
+		var tools = new CreateTool(tableDates, $('#box'));
+		tools.creat();
+		tools.delDate();
+	</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CSS奇特用法：为IMG设置背景图片</title>
+<style type="text/css">
+div {
+background: url('http://www.codefans.net//jscss/demoimg/201312/blur.jpg') no-repeat top left;
+width:232px;height: 200px; }
+img {display:block;background: url('http://www.codefans.net//jscss/demoimg/201312/parallax.gif') no-repeat bottom left;
+padding: 93px 100px 75px 100px;
+}
+</style>
+</head>
+<body>
+<div>
+<img src="http://www.codefans.net//jscss/demoimg/201312/Anime_runner.gif" alt="runner" />
+</div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		<style> 
+        body,html{ height: 100%; }
+        *{ margin: 0; padding: 0; }
+        .fixedBg{ 
+            min-height: 500px;
+            background-image: url("images/this.gif"); 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-size: cover; 
+        }
+        .testBefore,.testAfter{
+            background: #333;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+        }
+        h1{
+            color: #fff;
+            font-size: 100px;
+            line-height: 300px;
+        }
+</style> 
+	</style>
+</head>
+<body>
+	<div class="testBefore"><h1>BEFORE</h1></div>
+	<div class="fixedBg"></div>
+	<div class="testAfter"><h1>AFTER</h1></div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+.write_topic{
+	overflow: hidden;
+	position: relative;
+	width: 310px;
+	height: 36px;
+	background-color: orange;
+	line-height: 36px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	margin: 18px 0;
+	cursor: pointer;
+}
+.write_topic_k{
+	position: absolute;
+	z-index: 3000;
+	display: none;
+	height: 300px;
+	width: 300px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px orange;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: -16px;
+}
+.write_topic_k p{
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.write_topic_k p img{
+	width: 20px;
+}
+.write_topic_k .fb{
+	color: orange;
+	font-size: 18px;
+	font-weight: 700;
+}
+.write_topic_k .go{
+	height: 180px;
+	width: 260px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	border-radius: 6px;
+	margin-top: 20px;
+	resize:none;
+	font-size: 18px;
+}
+.write_topic_k img{
+	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div id="bao">
+		<div class="write_topic">
+			<!-- <img src="images/this.gif" alt="" id="gifImg"> -->
+			<span id="gif_yd">记旅行</span>
+			<span id="gif_yd">写传记</span>
+		</div>
+		<div class="write_topic_k">
+			<span class="fb">传记发表</span>
+			<textarea class="go" placeholder="写传记/游记... ..." id="go"></textarea>
+			<p><img src="cha.png" id="closeit" alt=""></p>
+			<img src="fabiao.png" id="fabiao" style="width: 120px;margin-top: 10px" alt="">
+		</div>
+	</div>
+	<script src="jquery-1.12.4.min.js"></script>
+	<script>
+	$('.write_topic').mouseover(function(){
+	    $('.write_topic_k').stop().slideDown();
+	    $('#fabiao').fadeIn().attr("src","fabiao.png");
+	});
+	
+	//关闭发表
+	$('#closeit').click(function(){
+	    $('.write_topic_k').stop().slideUp();
+	});
+	
+	
+	// 发表
+	var go = document.getElementById('go');
+	if (go.placeholder == null || go.placeholder == "") {
+	    alert("您还没有输入");
+	}else{
+	    $('#fabiao').click(function(){
+	        $('#fabiao').stop().fadeOut();
+	        $('#fabiao').fadeIn().attr("src","chenggong.png");
+	    });
+	};
+	</script>
+</body>
+</html>

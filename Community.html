@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>游侠客社区--变身游飞侠</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/Community_css.css">
+	<link rel="icon" href="images/favicon.ico"/>
+</head>
+<body>
+	<!-- 帮助菜单 -->
+	<div class="side">
+		<ul>
+			<li>
+				<a href="#">
+					<div class="sidebox">
+						<img src="images/side_icon01.png">客服中心
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="sidebox">
+						<img src="images/side_icon02.png">客户案例
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" >
+					<div class="sidebox">
+						<img src="images/side_icon04.png">QQ客服
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" >
+					<div class="sidebox">
+						<img src="images/side_icon03.png">新浪微博
+					</div>
+				</a>
+			</li>
+			<li style="border:none;">
+				<a href="javascript:goTop();" class="sidetop">
+					<img src="images/side_icon05.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- 收藏 -->
+
+	<!-- 返回顶部 -->
+	<!-- <img src="images/this.gif" class="top_top" id="top_top" alt="" > -->
+	<!-- 头部 -->
+	<div class="Community_top_nav_all">
+		<div class="Community_top_nav w">
+			<div class="Community_logo fl">
+				<a href="../index.html"><h1><img src="images/logo.png" alt=""></h1></a>
+			</div>
+			<ul class="Community_nav fl">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">社区</a></li>
+				<li><a href="#">圈子</a></li>
+				<li><a href="#">目的地</a></li>
+				<li><a href="#">攻略</a></li>
+				<li><a href="#">视频</a></li>
+				<li><a href="#">领队</a></li>
+				<li><a href="#">摄影</a></li>
+				<li><a href="#">旅游</a></li>
+				<li><a href="#">APP</a></li>
+			</ul>
+			<div class="Community_here fl">
+				<a href="#" id="ithere"> 签到 </a>
+			</div>
+			<ul class="Community_self fr" id="Community_self">
+				<li id="dlu">
+					<a href="#">登陆</a>
+					<div class="zhuce" id="dl">
+						<img src="images/logo.png" alt="">
+						<div class="vipinfo" style="margin-left: 10px">
+							<p>VIP用户名 :</p>
+							<input type="text" value="请输入用户名" id="dlid">
+							<p>密码 :</p>
+							<input type="text" value="请输入密码" id="dlmm">
+							<a href="#"><img src="images/lingqu.png" class="lingqu_img" alt=""></a>
+							<!-- <button class="d_btn">登陆</button> -->
+						</div>
+					</div>
+				</li>
+				<li id="zce">
+					<a href="#">注册</a>
+					<div class="zhuce" style="background-color: orange" id="zhuce">
+						<img src="images/logo.png" alt="">
+						<div class="vipinfo" style="margin-left: 10px">
+							<p>VIP用户名 :</p>
+							<input type="text" value="请输入用户名" id="zcid">
+							<p>密码 :</p>
+							<input type="text" value="请输入密码" id="zcmm">
+							<a href="#"><img src="images/zhuce.png" class="zhuce_img" alt=""></a>
+							<!-- <button class="z_btn">注册</button> -->
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- banner -->
+	<!-- 轮播大图 -->
+	<div class="community_banner" id="cBanner">
+		<ul class="banner_tit">
+			<li><a href="#"><img src="images/banner_1.jpg" id="banner_img" alt=""></a>
+				<p>
+				我的身体回到了家，我的灵魂还在那片土地，它的名字叫：甘南
+				</p>
+			</li>
+			<li><a href="#"><img src="images/banner_4.jpg" alt=""></a>
+				<p>
+				【与名师同行】走进大西北，走进可可西里，走进大自然最纯粹的地方	
+				</p>
+			</li>
+			<li><a href="#"><img src="images/banner_5.jpg" alt=""></a>
+				<p>
+				秘境西澳——珀斯南北800公里（粉红湖，尖峰石阵，玛格丽特河八天六晚深度游）	
+				</p>
+			</li>
+			<li><a href="#"><img src="images/banner_2.jpg" alt=""></a>
+				<p>
+				在历史长廊中走着吃着，是西安啊，是西安啊，是西安啊。
+				</p>
+			</li>
+		</ul>
+		<div class="banner_arrow">
+			<div class="banner_arrow_left"> < </div>
+			<div class="banner_arrow_right"> > </div>
+		</div>
+<!-- 		<a href="#"><div class="banner_link" id="bannerlink">
+			<img src="images/hotthere.png" alt="">
+		</div></a> -->
+	</div>
+	<!-- 内容 -->
+	<div class="coont w">
+		<!-- 本周话题 -->
+		<div class="topic fl">
+			<div class="topic_small_img">
+				<!-- <p>ready</p> -->
+				
+				<div class="bodyCon07">
+					<div class="teacher">
+						<div class="teacherPic">
+							<div class="content" id="sirendingzhi1">
+				<!--				<img src="images/teacher011.jpg" width="200" height="325" />-->
+								<div class="txt">
+									<h3>新疆</h3>
+									<h4>草场丰腴、林木葱郁，有着“塞外江南”的美称</h4>
+									<p>发团日期：7-10月<br>
+									   参考价格：5280元<br>
+									   摄影器材: 单反 广角 中长焦 三脚架等</p>
+								</div>
+							</div>
+							<div class="content" id="sirendingzhi2">
+								
+								<div class="txt">
+									<h3>云南</h3>
+									<h4>东川红土地的炫彩、高原明珠——抚仙湖的柔美</h4>
+									<p>发团日期：7-11月<br>
+									   参考价格：2780元<br>
+									   摄影器材: 单反 广角 中长焦 三脚架等</p>
+								</div>
+							</div>
+							<div class="content" id="sirendingzhi3">
+				
+								<div class="txt">
+									<a href="#" ><h3>贵州</h3></a>
+									<h4>西江千户苗寨 以美丽回答一切</h4>
+									<p>发团日期：7-12月<br>
+									   参考价格：2680元<br>
+									   摄影器材: 单反 广角 中长焦 三脚架等</p>
+								</div>
+							</div>
+							<div class="content" id="sirendingzhi4">
+					
+								<div class="txt">
+									<h3>色达</h3>
+									<h4>地球上最后的一片净土，心灵净化之旅</h4>
+									<p>发团日期：7-10月<br>
+									   参考价格：3900元<br>
+									   摄影器材: 单反 广角 中长焦 三脚架等</p>
+								</div>
+							</div>
+							<div class="content" id="sirendingzhi5">
+				
+								<div class="txt">
+									<h3>斯里兰卡</h3>
+									<h4>印度洋上的一滴眼泪！</h4>
+									<p>发团日期：6-12月<br>
+									   参考价格：1250美金<br>
+									   摄影器材: 单反 广角 中长焦 三脚架等</p>
+								</div>
+							</div>
+						</div>
+						
+						<div style="clear:both;"></div>
+						
+					</div>
+				</div>	
+			</div>
+			<!-- tab栏标题 -->
+
+			<div class="youji">
+				<p>游侠客游记</p>
+				<a href="#"><span>更多>> </span></a>
+			</div>
+
+			<!-- 话题tab栏目 -->
+			<div id="topic" class="topic_box">
+  				<div id="hd_span" class="hd">
+  				  <span class="span_1">热门游记</span>
+  				  <span>精华游记</span>
+  				  <span>最新游记</span>
+  				</div>
+  				<div class="bd">
+  				  <ul>
+  				    <li class="show">
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_7.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>炎炎盛夏，挑战高空玻璃水滑，相约天仙峡，走起炎炎盛夏，挑战高空玻璃水滑，相约天仙峡，走起</h3></a>
+								<p>安徽有个天柱山，是世界地质公园、国家5A级风景区，与黄山、九华山并列为安徽三大名山；天柱山里有个天仙峡，据说是七仙女与董永爱情故事的演绎地，影视剧《天仙配》也曾在此取景拍摄，是一个集山水风光、民俗风情、休闲娱乐、美食养生于...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">圣托里尼</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">茂凯</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">3287/32</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_8.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>2018 9.8 遇见最美的：西湖群山九溪十八涧</h3></a>
+								<p>位于浙江省杭州市的著名景点西湖之西的群山中，上自龙井起蜿蜒曲折7公里入钱塘江，该景点旅游时间春秋最佳。“九溪十八涧，西湖最胜处”，这是对九溪十八涧最为精辟的形容。上自龙井起蜿蜒曲折7公里入钱塘江。这里景色天然，少有匠气，"溪...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">西湖</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">九溪十八涧</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">2827/322</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_9.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>【攻略】爬了40次武功山以后，TA告诉你应该这么玩！</h3></a>
+								<p>一、前言好多人都有这样的错觉：1.武功山是个很虐的地方，去这里的人应该都是背着登山大包，里面装满帐篷，睡袋；2.武功山应该是适合在春天去的目的地，其他时候去都不好看；对于一个去过40次武功山的人来说是不服气的；我眼中的武功山：户外天堂——露营...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">浙江</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">西社</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">3967/388</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						
+  				    </li>
+  				    <li>
+						
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_4.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>#领队拉练# 木渎灵岩山</h3></a>
+								<p>一直都在寻找，寻找一种能够让内心世界得到满足的东西，于是走出人群密集的城市，走向一个可以让其身心放松的地方，它的名字叫做“户外”。户外能够让我的躁动的内心变得安静。此刻，让身体尽情的融入大自然中，忘却所有工作上的烦...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">浙江</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">西社</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">3967/388</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_5.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>云海缭绕的牛背山</h3></a>
+								<p>牛背山位于四川省雅安市荥经县境内，因山顶一面悬崖有巨石突出酷似牛头，山脊细长貌似牛背而得名。牛背山海拔3660米左右，它四面环山中间突起的独特地理位置，使它获得360度全方位“中国最大的观景平台”和绝佳摄影圣地的美称。站在牛背山...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">牛背山</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">西普洛斯</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">396/21</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_6.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>9月8、9日东海石林-慢门摄影、千亩盐田人文摄影-交作业</h3></a>
+								<p>虽然天公不作美，没有日落和日出，但在领队孔夫子老师的指导下，大家还是学到了不少东西，基本掌握了慢门的诀窍，一路欢歌笑语，意犹未尽，回味无穷...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">徐州</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">人人有</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">341/38</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+
+  				    </li>
+  				    <li>
+						
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_3.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>【2018暑期闯入肯尼亚动物王国，让我们一起SAY"哈库拉 马塔塔"｜详细攻略+精选海图】</h3></a>
+								<p>哈库拉 马塔塔（Hakuna Matata）这句话相信大家都不陌生，来自《狮子王》彭彭丁满对辛巴小狮子的口头禅，让其忘却烦恼，一路向前~那么这句话其实是来自古老的斯瓦西语，意思类似于英语里的“don' t worry”在肯尼亚这个其实是个万金油的...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">肯尼亚</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">黑人</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">33967/3828</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_2.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>漫步，在繁华的都市中找一份宁静 | 东京二日游全攻略</h3></a>
+								<p>旅行是件非常偏个人感受的事情，这个地方是否好玩，只有去过了才知道。除了常规景点的打卡，依旧有很多不在计划内的惊喜。这，大概就是旅行的美妙之处。东京是日本最大的城市，也是世界经济发展最高的都市之一。正是因为这样，它有着海纳...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">东京</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">普罗旺斯</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">3396/21</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="topic_1">
+							<div class="topic_img fl">
+								<img src="images/column_1.jpg" alt="">
+							</div>
+							<div class="topic_content fl">
+								<a href="#"><h3>【西溪渔夫】一曲菱歌一曲烟，偷得浮生半日闲</h3></a>
+								<p>有朋友到访杭州，我总会建议他，去西溪吧。“三西”是杭州的名片，然而在我眼里，西溪是杭州的一处秘境，比西湖名气小，因而少了摩肩擦踵的人潮汹涌，比起西泠，又多了几分人家烟火气息。这里适合三五好友，适合消磨光阴，适合闲庭信步，...</p>
+								<div class="topic_content_bottom">
+									<span><img src="images/wei.png" style="height: 16px;width: 16px" alt="">杭州</span>
+									<span><img src="images/age_2.jpg" style="height: 16px;width: 16px" alt="">王罗思</span>
+									<span><img src="images/zan.png" style="height: 16px;width: 16px" alt="">6341/138</span>
+									<span class="info fr">★ 收藏</span>
+								</div>
+							</div>
+						</div>
+
+
+  				    </li>
+  				  </ul>
+  				</div>
+  				<!-- 手风琴 -->
+  				<div class="shou">
+  					<i>游侠客--旅行游记</i>
+  					<a href="#"><span class="sr">更多>> </span></a>
+  				</div>
+  				<div class="qin">
+					<div class="bg bg-box-1"></div>
+					<div class="bg bg-box-2"></div>
+					<div class="bg bg-box-3"></div>
+					<div class="bg bg-box-4"></div>
+					<div id="beautiful">
+						<ul>
+							<li>
+								<div class="text">
+									<p>古北水镇</p>
+									<p>三日四晚</p>
+								</div>
+							</li>
+							<li>
+								<div class="text">
+									<p>塞罕坝</p>
+									<p>三日四晚</p>
+								</div>
+							</li>
+							<li>
+								<div class="text">
+									<p>塞北天漠</p>
+									<p>三日四晚</p>
+								</div>
+							</li>
+							<li class="curr">
+								<div class="text">
+									<p>草原秘境</p>
+									<p>三日四晚</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- 右边内容 -->
+		<div class="right_content fr">
+			<!-- 上方小话题 -->
+<!-- 			<div class="small_topic">
+				<a href="#"><img src="images/change.png" alt=""></a>
+			</div> -->
+			<div class="col-md-4 col-sm-6">
+		    	<div class="box">
+		    	    <img src="images/change.png">
+		    	    <div class="box-content">
+		    	        <div class="inner-content">
+		    	            <a href="#"><h3 class="title">立即参与活动</h3></a>
+		    	            <a href="#"><span class="post">点击获取活动详情</span></a>
+		    	        </div>
+		    	        <!-- <ul class="icon">
+		    	            <li><a href="#"><i class="fa fa-search"></i></a></li>
+		    	            <li><a href="#"><i class="fa fa-link"></i></a></li>
+		    	        </ul> -->
+		    	    </div>
+		    	</div>
+		    </div>
+			<div id="bao">
+				<div class="write_topic">
+					<!-- <img src="images/this.gif" alt="" id="gifImg"> -->
+					<span id="gif_yd">记旅行</span>
+					<span id="gif_yd">写传记</span>
+				</div>
+					<div class="write_topic_k">
+						<span class="fb">传记发表</span>
+						<textarea class="go" placeholder="写传记/游记... ..." id="go"></textarea>
+						<p><img src="images/cha.png" id="closeit" alt=""></p>
+						<img src="images/fabiao.png" id="fabiao" style="width: 120px;margin-top: 10px" alt="">
+					</div>
+			</div>
+			<div class="topic_news">
+				<p>社区公告</p><img src="images/bo.png" id="bo" style="margin-left: 6px; width: 14px;height: 14px;float: left;" alt="">
+				<a href="#"><i> 更多>> </i></a>
+				<ul class="newsUl">
+					<li><a href="#"><span>★ </span>圈子重磅来袭！全新玩法快来体验~<span class="new">new</span></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>写游记有问题？看看这里有没有解决办法！</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>如何写一篇精华游记赚取稿费？</a></li>
+				</ul>
+				<ul class="newsUl2">
+					<li><a href="#"><span>★ </span>新社区大变身，还不了解一下？<span class="hot">HOT</span></a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>为什么在电脑上发表游记，手机端却看不到？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>批量传图能传多少,图片大小有限制吗？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>游记字体可以改变吗？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>如何写出一篇精彩的游记？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>为什么在电脑上发表游记，手机端却看不到？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>如何写一篇精华游记赚取稿费？</a></li>
+				</ul>
+				<ul>
+					<li><a href="#"><span>★ </span>写游记有问题？看看这里有没有解决办法！</a></li>
+				</ul>
+			</div>
+			<div class="topic_news2">
+				<p>游侠客攻略</p>
+				<a href="#"><span>更多>> </span></a>
+				<br>
+				<img src="images/gonglue.png" alt="" id="gonglue">
+					<div class="container" id="container">
+						<p><a href="#">推 荐 度 : ★ ★ ★ ★</a></p>
+					</div>
+				<!-- <div class="content" id="content">
+					<p>推 荐 度: <span>★ ★ ★ ★</span></p>
+				</div> -->
+			</div>
+			<div class="topic_news3">
+				<p>游侠客视频</p>
+				<a href="#"><span>更多>> </span></a>
+				<br>
+				<video poster="images/video.jpg" webkit-playsinline="" playsinline="" controls="true">
+					<source src="video/movie.mp4">
+				</video>
+				<!-- <object data="video/movie.mp4" autostart="false"></object> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+        <div class="service">
+            <div class="w">
+                <ul>
+                    <li>
+                        <h3>责任</h3>
+                        <p>游侠客提倡责任的旅行对组织和参与者都是如此</p>
+                    </li>
+                    <li>
+                        <h3>线路</h3>
+                        <p>强大专业的策划和组织能力纯净美妙的旅游线路</p>
+                    </li>
+                    <li>
+                        <h3>服务</h3>
+                        <p>热忱的服务团队，敬业并富有人格魅力的领队导游</p>
+                    </li>
+                    <li>
+                        <h3>体验</h3>
+                        <p>边走边玩，一路行摄，团队建设，气氛活跃</p>
+                    </li>
+                    <li>
+                        <h3>生态</h3>
+                        <p>珍惜环境，尊重风俗，注重环保，绿色旅行</p>
+                    </li>
+                    <li>
+                        <h3>分享</h3>
+                        <p>一次活动大量照片游记分享领队负责集体照</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="w">
+                <div class="abox">
+                    <a href="#">关于游侠客</a>
+                    <a href="#">游侠客的故事</a>
+                    <a href="#">联系游侠客</a>
+                    <a href="#">游侠客招聘</a>
+                    <a href="#">意见反馈</a>
+                    <a href="#">使用协议</a>
+                    <a href="#">隐私政策</a>
+                    <a href="#">交换链接</a>
+                    <a href="#">帮助中心</a>
+                    <a href="#">网站地图</a>
+                </div>
+                <div class="allow">
+                    <span>浙ICP备 09011712 号-1 浙公网安备</span>
+                    <span>|</span>
+                    <span>33010602002105号</span>
+                    <span>|</span>
+                    <span>浙江游侠客国际旅行社有限公司</span>
+                    <span>|</span>
+                    <span>营业执照</span>
+                    <span>|</span>
+                    <span> 杭州途游电子商务有限公司</span>
+                    <span>|</span>
+                    <span>许可证编号：L-ZJ-CJ00161</span>
+                </div>
+                <p>2018 youxiake.com 版权所有法律顾问：浙江四海方圆律师事务所 傅林放 杭州市旅游投诉电话：0571-96123 投诉及紧急事件联系电话：400-670-6300转5</p>
+                <p>旅游预订电话(免长途费)：400-670-6300，公司总部地址：浙江省杭州市西湖区教工路198号浙商大创业园D幢3楼，投诉建议邮箱：jianyi@youxiake.com</p>
+                <ul class="erweima">
+                    <li><img src="images/weibo_code.png" alt="">
+                        <h4>游侠客公众号</h4>
+                    </li>
+                    <li><img src="images/weima2.png" alt="">
+                        <h4>扫一扫下载app</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="friend">
+            <div class="w">
+                <b class="fl">友情链接:</b>
+                <div class="linkbox fl">
+                    <a href="#">自驾游</a>
+                    <a href="#">常旅客</a>
+                    <a href="#">澳门巴黎人官网</a>
+                    <a href="#">朝鲜旅游</a>
+                    <a href="#">导游</a>
+                    <a href="#">顶级酒店网</a>
+                    <a href="#">希腊移民</a>
+                    <a href="#">国旅在线</a>
+                    <a href="#">额济纳胡杨林</a>
+                    <a href="#">川藏线旅游</a>
+                    <a href="#">爱侣游网</a>
+                    <a href="#">徕卡m10</a>
+                    <a href="#">额济纳旅游</a>
+                    <a href="#">马耳他移民旅游</a>
+                    <a href="#">澳门威尼斯人酒店官网</a>
+                    <a href="#">中青旅遨游网</a>
+                    <a href="#">马尔代夫</a>
+                    <a href="#">美国旅游</a>
+                    <a href="#">北青旅官网</a>
+                    <a href="#">旅游资讯</a>
+                    <a href="#">东北旅游</a>
+                    <a href="#">北京旅游攻略</a>
+                    <a href="#">坝上旅游</a>
+                    <a href="#">中国青年旅行社</a>
+                    <a href="#">重庆旅游</a>
+                    <a href="#">坝上草原</a>
+                    <a href="#">机票预订</a>
+                    <a href="#">雪乡摄影</a>
+                    <a href="#">度假旅游线路</a>
+                    <a href="#">天气预报</a>
+                    <a href="#">80天环游网</a>
+                    <a href="#">山水旅游</a>
+                    <a href="#">南北游</a>
+                    <a href="#">酒店预订</a>
+                    <a href="#">房途网</a>
+                    <a href="#">日本旅游</a>
+                    <a href="#">19楼旅游</a>
+                    <a href="#">游侠客社区</a>
+                </div>
+                <div class="linkimg fl">
+                    <a href="#" class="one"></a>
+                    <a href="#" class="two"></a>
+                    <a href="#" class="three"></a>
+                    <a href="#" class="four"></a>
+                    <a href="#" class="five"></a>
+                    <a href="#" class=""></a>
+                    <a href="#" class=""></a>
+                    <a href="#" class=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/Community_js.js"></script>
+</body>
+</html>
